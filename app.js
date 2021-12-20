@@ -50,13 +50,4 @@ app.all('*', function(req, res, next) {
 app.use(express.static('./public')); // load UI from public folder
 app.use(bodyParser.json());
 
-    request(options, function (error, response, body)
-    {
-        if (error)
-          return console.error('Failed: %s', error.message);
-        console.log('Success: ', body);
-        return res.json(body);
-        //return body;
-    });
-});
 module.exports = app;
