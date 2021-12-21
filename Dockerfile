@@ -6,7 +6,7 @@ RUN apt-get install -y mtr-tiny
 RUN apt-get install -y wget
 RUN apt-get install -y curl
 RUN apt-get install -y netcat
-RUN apt-get install -yq dnsutils
+RUN apt-get install -y dnsutils
 COPY server.js .
 COPY package.json .
 COPY / .
